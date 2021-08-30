@@ -66,7 +66,7 @@ class Spotify():
         headers = {'Authorization': 'Basic {0}'.format(b64_auth_str)}
         headers['Content-Type'] = 'application/x-www-form-urlencoded'
 
-        # aiohttp session created for post to url to add track to playlist
+        
         async with aiohttp.ClientSession(headers=headers) as session:
             async with session.post(url, params=payload) as response:
                 response = await response.json()
