@@ -3,7 +3,6 @@ import os
 import discord
 from playlistadd import Spotify
 
-#TODO deploy to heroku, make sure environment vars can be accessed, add bot to channel
 
 # Spotify Access & Refresh tokens, playlist id, client id & secret
 SP_ACCESS_TOKEN = os.environ.get('SP_ACCESS_TOKEN')
